@@ -1,0 +1,28 @@
+﻿<Window x:Class="ConferenceSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConferenceSystem"
+        mc:Ignorable="d"
+        Title="Conference System" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="LightBlue">
+            <TextBlock x:Name="PageNameTextBlock" VerticalAlignment="Center" HorizontalAlignment="Center"
+                       FontSize="30"/>
+            <Button x:Name="LoginButton" Click="LoginButton_Click"
+                    Width="100" Height="50" Margin="0,0,10,0" HorizontalAlignment="Right"
+                    Content="Войти"/>
+        </Grid>
+        <Grid Grid.Row="2" Background="Cyan">
+
+        </Grid>
+        <Frame Grid.Row="1" x:Name="MainFrame" Background="Transparent" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>
